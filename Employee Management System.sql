@@ -1,6 +1,6 @@
 create database employees;
 use employees;
-/* Here is Table Script*/
+
 CREATE TABLE EmployeeDetails (
 EmployeeID INT PRIMARY KEY,
 FirstName VARCHAR(50),
@@ -9,7 +9,7 @@ Department VARCHAR(50),
 Salary DECIMAL(10,2),
 HireDate DATE);
 
-/* Inserting data into EmployeesTable */
+
 INSERT INTO EmployeeDetails (EmployeeID, FirstName, LastName, Department, Salary, HireDate)
 VALUES
 (1, 'Amit'   , 'Sharma'   , 'HR'       , 50000.00, '2015-05-20'),
@@ -102,7 +102,7 @@ GROUP BY Department
 ORDER BY Avgsalary DESC
 LIMIT 1;
 
--- Question 24 : Retrieve the top 2 highest paid employees in each department.
+--  Retrieve the top 2 highest paid employees in each department.
 SELECT EmployeeID, FirstName, LastName, Department,
 Salary
 FROM (
